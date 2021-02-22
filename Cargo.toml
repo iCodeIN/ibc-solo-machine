@@ -9,4 +9,5 @@ edition = "2018"
 [dependencies]
 ibc-proto = "0.7"
 prost-types = "0.7"
+regex = "1.4"
 thiserror = "1.0"
