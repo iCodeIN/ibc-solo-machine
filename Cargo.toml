@@ -7,7 +7,17 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-ibc-proto = "0.7"
+ed25519-dalek = "1.0"
+hex = "0.4"
+k256 = { version = "0.7", features = ["ecdsa", "sha256"] }
+prost = "0.7"
 prost-types = "0.7"
 regex = "1.4"
+ripemd160 = "0.9"
+sha2 = "0.9"
+signature = "1.2"
 thiserror = "1.0"
+tonic = "0.4"
+
+[build-dependencies]
+tonic-build = "0.4"
